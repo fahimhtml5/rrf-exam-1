@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+@import "tailwindcss";
+
+
+.container {
+    @apply mx-auto px-4;
+}
+
+
+.red-circle:before {
+    content: '';
+    @apply w-[146px] h-[146px] bg-[#fc3314] rounded-full -z-1;
+}
+
+.red-circle-1:before {
+    content: '';
+    @apply w-[234px] h-[234px] bg-[#fc3314] rounded-full -z-1;
+}
+
+.red-circle-2:before {
+    content: '';
+    @apply w-[221px] h-[221px] bg-[#fc3314] rounded-full -z-1;
+}
+
+.red-circle-3:before {
+    content: '';
+    @apply w-[122px] h-[122px] bg-[#fc3314] rounded-full -z-1;
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+.arrow-bg {
+    @apply w-8 h-8 rounded-full bg-[#fc3314];
+}
+
+
+
+.testimonials-carousel > svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -40px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.testimonials-carousel > svg:first-child {
+    left: -40px;
+}
